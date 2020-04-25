@@ -76,7 +76,7 @@ module.exports = class extends Component {
             <script src={my_cdn(url_for('/js/toc.js'))} defer={true}></script>
             <script src={my_cdn(url_for('/js/main.js'))} defer={true}></script>
             {isValineComment ? <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> : null}
-            {isValineComment ? <script src="https://cdnjs.loli.net/ajax/libs/valine/1.4.4/Valine.min.js"></script> : null}
+            {isValineComment ? <script src="//unpkg.com/valine@1.4.9/dist/Valine.min.js"></script> : null}
             {isValineComment ? <script src={my_cdn(url_for('/js/md5.min.js'))}></script> : null}
             {(hasHotRecommend || !hasBanner) ? null : <script src={my_cdn(url_for('/js/banner.js'))}></script>}
             {hasComment ? <script dangerouslySetInnerHTML={{ __html: js }}></script> : null}
