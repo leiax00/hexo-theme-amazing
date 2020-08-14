@@ -219,14 +219,14 @@ widgets:
     -
         position: right
         type: latest_comment
-#    -
-#        # Where should the widget be placed, left sidebar or right sidebar
-#        position: left
-#        type: links
-#        # Names and URLs of the sites
-#        links:
-#            Hexo: 'https://hexo.io'
-#            Bulma: 'https://bulma.io'
+    #    -
+    #        # Where should the widget be placed, left sidebar or right sidebar
+    #        position: left
+    #        type: links
+    #        # Names and URLs of the sites
+    #        links:
+    #            Hexo: 'https://hexo.io'
+    #            Bulma: 'https://bulma.io'
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -256,16 +256,16 @@ widgets:
         description: 输入邮箱开始订阅，更博后邮件通知！
         # Feedburner ID
         feedburner_id: removeifFeedsId
-    # Google AdSense unit configurations
-#    -
-#        # Where should the widget be placed, left sidebar or right sidebar
-#        position: left
-#        type: adsense
-#        # AdSense client ID
-#        client_id: ''
-#        # AdSense AD unit ID
-#        slot_id: ''
-#    - 
+        # Google AdSense unit configurations
+        #    -
+        #        # Where should the widget be placed, left sidebar or right sidebar
+        #        position: left
+        #        type: adsense
+        #        # AdSense client ID
+        #        client_id: ''
+        #        # AdSense AD unit ID
+        #        slot_id: ''
+        #    -
         # position: right
         # type: notice
         # contents: 
@@ -327,39 +327,39 @@ providers:
 comment:
     type: gitalk
     language: zh-CN #zh-CN #Localization language key, en, zh-CN and zh-TW are currently available.
-    owner: removeif         # (required) GitHub user name
-    repo: blog_comment          # (required) GitHub repository name
-    client_id: 46a9f3481b46ea0129d8     # (required) OAuth application client id
-    client_secret: 79c7c9cb847e141757d7864453bcbf89f0655b24 # (required) OAuth application client secret
-    admin: ['removeif']
+    owner: leiax00         # (required) GitHub user name
+    repo: leiax00_comment          # (required) GitHub repository name
+    client_id: 334fdc762e2414d0247b     # (required) OAuth application client id
+    client_secret: 39a07df66dd9dd335ecef2b7930a49b0ed19c5c6 # (required) OAuth application client secret
+    admin: ['leiax00']
     create_issue_manually: true
     distraction_free_mode: false
-    has_hot_recommend: true # 是否有热门推荐
-    has_latest_comment: true #是否有最新评论
+    has_hot_recommend: false # 是否有热门推荐
+    has_latest_comment: false #是否有最新评论
 
-# comment:
-#     type: valine
-#     app_id: rOtVIhvG3kd7QkMKe3naSU9R-gzGzoHsz
-#     app_key: F2sNV0CkqvbPat45di3DEn3z
-#     notify: false
-#     verify: false
-#     avatar: 'mp'
-#     placeholder: '留下您的高见！'
-#     has_latest_comment: true #是否有最新评论 true-有，false-无
-#     owner: 辣椒の酱 #博主名 最新评论标注[博主]
-#     required_fields: ['nick', 'mail', 'link']
-#     lang: en #zh-CN zh-TW en ja
+    # comment:
+    #     type: valine
+    #     app_id: rOtVIhvG3kd7QkMKe3naSU9R-gzGzoHsz
+    #     app_key: F2sNV0CkqvbPat45di3DEn3z
+    #     notify: false
+    #     verify: false
+    #     avatar: 'mp'
+    #     placeholder: '留下您的高见！'
+    #     has_latest_comment: true #是否有最新评论 true-有，false-无
+    #     owner: 辣椒の酱 #博主名 最新评论标注[博主]
+    #     required_fields: ['nick', 'mail', 'link']
+    #     lang: en #zh-CN zh-TW en ja
 
 
-# utteranc site: https://utteranc.es/
-# comment:
-#     type: utteranc
-#     repo: removeif/utteranc_comment # (required) GitHub userName & repository name
-#     issue_term: pathname 
-#     issue_number: 
-#     label: 
-#     theme: github-light
-  
+    # utteranc site: https://utteranc.es/
+    # comment:
+    #     type: utteranc
+    #     repo: removeif/utteranc_comment # (required) GitHub userName & repository name
+    #     issue_term: pathname
+    #     issue_number:
+    #     label:
+    #     theme: github-light
+
 global_gray: false #true 全局灰色，特定时期可以开启，false-不开启
 
 has_banner: false #首页是否有banner，true-是，false-否，如果配置了热门推荐显示热门推荐，banner配置数据在json_data/banner.json里按照配置格式配置好，至少三条
